@@ -1,6 +1,6 @@
 class Solution:
     def mincostToHireWorkers(self, quality: List[int], wage: List[int], k: int) -> float:
-        # 9:37
+        
         total_wage, total_quality, max_heap = float('inf'), 0, []
         for ratio, q in sorted([(w/q, q) for w, q in zip(wage, quality)]):
             total_quality += q
